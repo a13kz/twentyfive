@@ -4,7 +4,7 @@ body{
 }
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:500px){
 
 
 
@@ -12,6 +12,15 @@ body{
     grid-area: i-art;
     background-color: azure;
 }
+
+.menu-button{
+    z-index: 100;
+}
+
+.menu-button img{
+    height: 2.5em;
+}
+
 
 div#layout-start{
     display: grid;
@@ -30,6 +39,22 @@ header{
     flex-direction: row;
     grid-area: hd;
     background-color: azure;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    background: rgb(212, 212, 212);
+    position: fixed;
+    top: -150vw;
+    left: 0;
+    transition: top 0.3s;
+    z-index: 10;
+    justify-content: space-evenly;
+    align-content: center;
+    
 }
 
 div#layout-about{
@@ -58,6 +83,14 @@ main#about-main{
     background-color: rgb(0, 255, 166);
     padding: 5vh 2vh;
     gap: 2.5vh;
+}
+
+.show{
+    top: 0;
+}
+
+.disable-scroll{
+    overflow: hidden; 
 }
 
 main#about-main article{
