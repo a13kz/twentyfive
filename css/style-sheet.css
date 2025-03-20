@@ -25,7 +25,7 @@ body{
 div#layout-start{
     display: grid;
     height: auto;
-    grid-template-rows: 15vh 70vh auto 75vh 20vh;
+    grid-template-rows: 15vh auto auto 75vh 20vh;
     grid-template-areas:
     'hd'
     'i-art'
@@ -54,10 +54,9 @@ header{
     z-index: 10;
     justify-content: space-evenly;
     align-content: center;
-    
 }
 
-div#layout-about{
+div#layout-buy{
     display: grid;
     height: auto;
     grid-template-rows: 15vh 10vh auto 20vh;
@@ -74,16 +73,25 @@ main#start-main{
     padding: 5vh 2vh;
 }
 
-main#about-main{
+main#buy-main article img{
+    width: 100%;
+    height: 100%;
+}
+.buy-item:hover{
+    scale: 110%;
+}
+
+main#buy-main{
     grid-area: A-mn;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: rgb(0, 255, 166);
-    padding: 5vh 2vh;
-    gap: 2.5vh;
+    padding: 10vh 10vh;
+    gap: 10vh;
 }
+
 
 .show{
     top: 0;
@@ -93,9 +101,8 @@ main#about-main{
     overflow: hidden; 
 }
 
-main#about-main article{
+main#buy-main article{
     width: 100%;
-    height: 67.5vh;
     background-color: bisque;
 }
 
