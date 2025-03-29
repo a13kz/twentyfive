@@ -6,6 +6,9 @@ body{
 
 a:link{
     text-decoration: none;
+    font-size:x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
 }
 
 
@@ -77,32 +80,30 @@ header{
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 15em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    width: 20em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     background: beige;
     position: fixed;
     top: 0;
     right: -100em;
     transition: right 0.4s;
-    z-index: 10;
+    z-index: 12;
     justify-content: space-evenly;
     align-content: center;
 }
 
 
-
 .menu{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 50em;
     width: 100em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     background: white;
     position: fixed;
-    top: -100%;
+    top: -150%;
     left: 0;
     transition: top 0.5s;
     z-index: 10;
-    justify-content: space-evenly;
-    align-content: center;
+    padding-left: 1em;
 }
 
 div#layout-buy{
@@ -185,7 +186,6 @@ footer{
 
 @media screen and (min-width:551px){
 
-
 h3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -222,6 +222,9 @@ h4{
     height: 2.5em;
 }
 
+nav a:link:hover{
+    scale: 110%;
+}
 
 
 div#layout-start{
@@ -245,6 +248,7 @@ header{
     align-items: center;
     z-index: 11;
 }
+
 .shop-menu
 {
     display: flex;
@@ -256,7 +260,7 @@ header{
     top: 0;
     right: -100%;
     transition: right 0.1s;
-    z-index: 10;
+    z-index: 12;
     justify-content: space-evenly;
     align-content: center;
 }
@@ -315,12 +319,6 @@ main#buy-main{
     gap: 2.5em;
 }
 
-
-
-.disable-scroll{
-    overflow: hidden;
-}
-
 main#buy-main article{
     width: 20em;
 
@@ -351,11 +349,24 @@ footer{
 
 }
 
+.fade-layer
+{
+    height: 100%;
+    width: 100%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    background: black;
+    opacity: 10%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right 0.01s;
+    z-index: 11;
+}
 
 .show-menu{
-    top: 0;
+    top: 10em;
 }
 
 .show-shop{
     right: 0%;
 }
+

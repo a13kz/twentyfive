@@ -1,5 +1,6 @@
 document.querySelector(".menu-button").addEventListener("click", showMenu)
 document.querySelector(".shop-button").addEventListener("click", showShop)
+document.querySelector(".fade-layer").addEventListener("click", showShop)
 
 itemContainer = []
 
@@ -14,6 +15,9 @@ function showMenu(){
 function showShop(){
     let menu = document.querySelector(".shop-menu")
     let body = document.querySelector("body")
+    let layer = document.querySelector(".fade-layer")
+    
+    layer.classList.toggle("show-shop")
     body.classList.toggle("disable-scroll")
     menu.classList.toggle("show-shop")
 
