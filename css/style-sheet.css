@@ -9,8 +9,12 @@ a:link{
     font-size:x-large;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 1000;
+    color: black;
 }
-
+a:visited {
+  text-decoration: none;
+  color: black;
+}
 
 @media screen and (max-width:550px){
 
@@ -119,12 +123,22 @@ div#layout-buy{
 main#start-main{
     grid-area: S-mn;
     background-color: whitesmoke;
-    padding: 5vh 2vh;
+    padding: 2em 2em;
+}
+
+main#start-main article{
+    
+    height: 30em;
+    background-color: white;
+    
+}
+
+main#start-main article img{
+    height: 100%;
 }
 
 main#buy-main article img{
     width: 100%;
-
 }
 
 .logo{
@@ -159,11 +173,7 @@ main#buy-main article{
 
 }
 
-main#start-main article{
-    
-    height: 25em;
-    background-color: white;
-}
+
 
 section{
     grid-area: sc;
@@ -230,7 +240,7 @@ nav a:link:hover{
 div#layout-start{
     display: grid;
     height: auto;
-    grid-template-rows: 10em 5em auto auto 75vh 20em;
+    grid-template-rows: 10em 5em auto auto 75em 20em;
     grid-template-areas:
     'hd'
     'nv'
@@ -290,13 +300,22 @@ div#layout-buy{
 main#start-main{
     grid-area: S-mn;
     background-color: whitesmoke;
-    padding: 5vh 2vh;
+    padding: 5em 2em;
+}
+main#start-main article{
+    
+    height: 50em;
+    background-color: white;
 }
 
 main#buy-main article img{
     width: 100%;
 
 }
+main#start-main article img{
+    height: 100%;
+}
+
 
 .logo{
     height: 3rem;
@@ -324,11 +343,7 @@ main#buy-main article{
 
 }
 
-main#start-main article{
-    
-    height: 25em;
-    background-color: white;
-}
+
 
 section{
     grid-area: sc;
