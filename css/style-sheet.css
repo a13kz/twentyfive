@@ -4,6 +4,15 @@ body{
 
 }
 
+p{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 a:link{
     text-decoration: none;
     font-size:x-large;
@@ -61,13 +70,12 @@ h4{
 
 div#layout-start{
     display: grid;
-    height: auto;
-    grid-template-rows: 10em auto auto 75vh 20em;
+    height: 10em;
+    grid-template-rows: 10em auto auto 20em;
     grid-template-areas:
     'hd'
     'i-art'
     'S-mn'
-    'sc'
     'ft';
 }
 
@@ -85,7 +93,7 @@ header{
     flex-direction: column;
     height: 100%;
     width: 20em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-    background: beige;
+    background: whitesmoke;
     position: fixed;
     top: 0;
     right: -100em;
@@ -121,20 +129,18 @@ div#layout-buy{
 }
 
 main#start-main{
+    display: flex;
+    flex-direction: column;
     grid-area: S-mn;
     background-color: whitesmoke;
-    padding: 2em 2em;
+    align-content: center;
+    gap: 5em;
+    padding: 2em 1em;
 }
 
-main#start-main article{
-    
-    height: 30em;
-    background-color: white;
-    
-}
 
 main#start-main article img{
-    height: 100%;
+    width: 100%;
 }
 
 main#buy-main article img{
@@ -241,13 +247,12 @@ nav a:link:hover{
 div#layout-start{
     display: grid;
     height: auto;
-    grid-template-rows: 10em 5em auto auto 75em 20em;
+    grid-template-rows: 10em 5em auto auto 20em;
     grid-template-areas:
     'hd'
     'nv'
     'i-art'
     'S-mn'
-    'sc'
     'ft';
 }
 
@@ -266,7 +271,7 @@ header{
     flex-direction: column;
     height: 100%;
     width: 25em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-    background: beige;
+    background: whitesmoke;
     position: fixed;
     top: 0;
     right: -100%;
@@ -299,23 +304,28 @@ div#layout-buy{
 }
 
 main#start-main{
+    display: flex;
+    flex-direction: column;
     grid-area: S-mn;
     background-color: whitesmoke;
-    padding: 5em 2em;
+    align-content: center;
+    gap: 10em;
+    padding: 5em 25em;
 }
 main#start-main article{
     
-    height: 50em;
-    background-color: white;
-}
-
-main#buy-main article img{
     width: 100%;
+    background-color: white;
 
 }
 main#start-main article img{
-    height: 100%;
+    width: 100%;
 }
+main#buy-main article img{
+    width: 100%;
+
+}   
+
 
 
 .logo{
@@ -346,11 +356,6 @@ main#buy-main article{
 
 
 
-section{
-    grid-area: sc;
-    background-color: whitesmoke;
-    padding: 5vh 2vh;
-}
 section article{
     width: 100%;
     height: 65vh;
@@ -379,7 +384,7 @@ footer{
 }
 
 .show-menu{
-    top: 10em;
+    top: 9em;
 }
 
 .show-shop{
