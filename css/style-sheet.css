@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: black;
     margin: 0;
     background-image: url("/img/buy_background.jpg");
 }
@@ -24,6 +24,10 @@ h3{
     font-weight: 1000;
     font-style: normal;
 }
+h4{
+    font-family: 'MursGothic-bold', sans-serif;
+}
+
 
 @font-face {
     font-family: 'MursGothic-bold'; /* Name you'll use in CSS */
@@ -41,26 +45,29 @@ a:link{
     text-decoration: none;
     font-size:x-large;
     font-weight: 1000;
-    color: white;
     font-family: 'MursGothic-bold', sans-serif;
     font-style: normal;
 }
-a:visited {
-  text-decoration: none;
-  color: white;
+
+
+.buy-item a{
+    color: black;
 }
+.buy-item a:visited{
+    color: black;
+}
+
 
 @media screen and (max-width:750px){
 
-
+nav a:visited {
+    text-decoration: none;
+    color: black;
+}
 h3{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
 }
 
-h4{
-    font-family: 'MursGothic-bold', sans-serif;
-}
 
 .image-art{
     grid-area: i-art;
@@ -105,12 +112,13 @@ div#layout-start{
 }
 
 header{
+    position: sticky;
     display: flex;
     flex-direction: row;
     grid-area: hd;
-    background-color: white;
     align-items: center;
-    z-index: 11;
+    z-index: 100;
+    opacity: 75%;
 }
 .shop-menu
 {
@@ -132,7 +140,7 @@ header{
 .menu{
     display: flex;
     flex-direction: column;
-    height: 50em;
+    height: 100%;
     width: 100em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     background: white;
     position: fixed;
@@ -219,8 +227,7 @@ section article{
 
 footer{
     grid-area: ft;
-    background-color: white;
-
+    
 }
 
 }
@@ -267,7 +274,10 @@ h4{
 nav a:link:hover{
     scale: 110%;
 }
-
+nav a:visited {
+    text-decoration: none;
+    color: white;
+}
 
 div#layout-start{
     display: grid;
@@ -308,6 +318,7 @@ header{
 }
 
 nav{
+    color: white;
     top: 0;
     position: sticky;
     display: flex;
