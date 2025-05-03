@@ -235,14 +235,6 @@ footer{
 
 @media screen and (min-width:750px){
 
-h3{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-}
-
-h4{
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 .image-art{
     grid-area: i-art;
@@ -254,6 +246,49 @@ h4{
     height: 100%;
     width: 100%;
 }
+
+#dropbtn {
+    font-family: 'MursGothic-bold', sans-serif;
+    color: black;
+    padding: 16px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    }
+/* Dropdown button on hover & focus */
+#dropbtn:hover{
+    scale: 105%;
+    }
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+}  
+  /* Links inside the dropdown */
+.dropdown-content button {
+    color: black;
+    background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 .menu-button{
     z-index: 100;
@@ -355,6 +390,17 @@ main#start-main article{
     
     background-image: url(/img/band_bild_alfapet_svart_vit.jpg);
     color: white;
+}
+
+main#start-main h5{
+    background-color: white;
+    color: black;
+    font-family: 'MursGothic-bold', sans-serif;
+    font-size: 5em;
+    margin: 0;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.25em;
 }
 
 main#start-main article img{

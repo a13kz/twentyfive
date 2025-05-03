@@ -36,3 +36,31 @@ function showShop(){
 function addToList(){
     postMessage("item has been added to cart")
 }
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function filterButton() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}      
+
+function sortItems(name){
+    document.getElementById("dropbtn").innerHTML = name
+}
+
+
+  // Close the dropdown menu if the user clicks outside of it
+
+/*
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        }
+    }
+    }
+}
+*/
