@@ -329,8 +329,18 @@ div#layout-start{
 }
 
 #merch{
+    background-color: white;
     display: flex;
-    height: 50em;
+}
+
+#merch article img{
+
+    scale: 95%;
+
+}
+
+#merch article img:hover{
+    scale: 100%;
 }
 
 header{
@@ -394,11 +404,15 @@ main#start-main{
     align-content: center;
 }
 main#start-main article{
-    background-image: url(/img/band_bild_alfapet_svart_vit.jpg);
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: white;
+}
+
+.info{
+    background-image: url(/img/band_bild_alfapet_svart_vit.jpg);
 }
 
 main#start-main h5{
