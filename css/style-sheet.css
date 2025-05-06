@@ -14,7 +14,7 @@ p{
 
 li{
     font-family: 'MursGothic-light';
-    height: 10em;
+    height: 5em;
 }
 
 h1{
@@ -61,6 +61,14 @@ a:link{
     color: black;
 }
 
+.buy-item:hover{
+    scale: 102.5%;
+}
+.buy-item{
+    transition: 0.25s;
+    height: 30em;
+
+}
 
 @media screen and (max-width:750px){
 
@@ -358,7 +366,7 @@ div#layout-about{
 }
 
 #merch article img{
-
+    transition: 0.25s;
     scale: 95%;
 
 }
@@ -421,8 +429,9 @@ nav{
     position: sticky;
     display: flex;
     grid-area: nv;
-    justify-content: space-evenly;
+    justify-content: center;
     align-self: center;
+    gap: 15em;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 1000;
