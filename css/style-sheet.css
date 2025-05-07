@@ -1,7 +1,6 @@
 body{
     background-color: black;
     margin: 0;
-    background-image: url("/img/buy_background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -70,8 +69,17 @@ a:link{
 
 }
 
+
+
 @media screen and (max-width:750px){
 
+nav a{
+    color: black;
+}
+nav a:visited {
+    text-decoration: none;
+    color: black;
+}
 nav a:visited {
     text-decoration: none;
     color: black;
@@ -139,7 +147,7 @@ h3{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 50em;
+    height: 30em;
 }
 .about-box{
     padding-left: 1em;
@@ -157,7 +165,11 @@ h3{
 .image-art{
     grid-area: i-art;
     background-color: white;
-    height: 100%;
+    background-image: url(/img/band_bild_alfapet_svart_vit.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30em;
 }
 
 .image-art img{
@@ -214,7 +226,7 @@ header{
     grid-area: hd;
     align-items: center;
     z-index: 100;
-    opacity: 75%;
+    background-color: black;
 }
 .shop-menu
 {
@@ -237,14 +249,14 @@ header{
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 100em;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    width: 110%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     background: white;
-    position: fixed;
+    position: absolute;
     top: -150%;
     left: 0;
     transition: top 0.5s;
     z-index: 10;
-    padding-left: 1em;
+    padding-top: 1em;
 }
 
 div#layout-buy{
@@ -268,7 +280,7 @@ main#start-main h5{
     background-color: black;
     color: white;
     font-family: 'MursGothic-bold', sans-serif;
-    font-size: 5em;
+    font-size: 2.5em;
     margin: 0;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
@@ -342,8 +354,24 @@ section article{
 
 footer{
     grid-area: ft;
-    
+    color: white;
 }
+#cart-button{
+    border-radius: 5em;
+    height: 5em;
+    font-family: 'MursGothic-bold', sans-serif;
+    background-color: black;
+    color: white;
+	border: none;
+	cursor: pointer;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+#cart-button:hover{
+    scale: 105%;
+}
+
 
 }
 
@@ -354,13 +382,13 @@ footer{
 .image-art{
     grid-area: i-art;
     background-color: white;
-    height: 100%;
+    background-image: url(/img/band_bild_alfapet_svart_vit.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60em;
 }
 
-.image-art img{
-    height: 100%;
-    width: 100%;
-}
 
 #dropbtn {
     font-family: 'MursGothic-bold', sans-serif;
@@ -425,6 +453,9 @@ nav a:link:hover{
 }
 nav a:visited {
     text-decoration: none;
+    color: white;
+}
+nav a{
     color: white;
 }
 
@@ -568,7 +599,7 @@ main#start-main h5{
     background-color: black;
     color: white;
     font-family: 'MursGothic-bold', sans-serif;
-    font-size: 5em;
+    font-size: 3.5em;
     margin: 0;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
@@ -584,7 +615,21 @@ main#buy-main article img{
 
 }   
 
+#cart-button{
+    border-radius: 5em;
+    height: 5em;
+    font-family: 'MursGothic-bold', sans-serif;
+    background-color: black;
+    color: white;
+	border: none;
+	cursor: pointer;
+    padding: 12px 16px;
+    text-decoration: none;
+}
 
+#cart-button:hover{
+    scale: 105%;
+}
 
 .logo{
     height: 3rem;
@@ -640,7 +685,7 @@ footer{
     top: 0;
     right: -100%;
     transition: right 0.01s;
-    z-index: 11;
+    z-index: 101;
 }
 
 .show-menu{
