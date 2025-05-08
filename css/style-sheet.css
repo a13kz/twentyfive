@@ -21,6 +21,11 @@ h1{
     font-weight: 1000;
     font-style: normal;
 }
+h2{
+    font-family: 'MursGothic-bold', sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+}
 
 h3{
     font-family: 'MursGothic-bold', sans-serif;
@@ -30,7 +35,10 @@ h3{
 h4{
     font-family: 'MursGothic-bold', sans-serif;
 }
-
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
 @font-face {
     font-family: 'MursGothic-bold'; /* Name you'll use in CSS */
@@ -130,6 +138,9 @@ h3{
 
 .show {display:block;}
 
+
+
+
 #merch{
     background-color: white;
     display: flex;
@@ -141,7 +152,7 @@ h3{
 
 }
 .about-img{
-    grid-area: 'abt-img';
+    grid-area: abt-img;
     background-image: url(/img/IMG_3749.JPG);
     background-color: white ;
     background-repeat: no-repeat;
@@ -151,7 +162,7 @@ h3{
 }
 .about-box{
     padding-left: 1em;
-    grid-area: 'abt-box';
+    grid-area: abt-box;
     background-color: black;
     color: white;
     text-wrap: pretty;
@@ -169,12 +180,7 @@ h3{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 30em;
-}
-
-.image-art img{
-    height: 100%;
-    width: 100%;
+    height: 15em;
 }
 
 .menu-button{
@@ -200,7 +206,7 @@ h3{
 div#layout-start{
     display: grid;
     height: 10em;
-    grid-template-rows: 10em auto auto 20em;
+    grid-template-rows: 10em auto auto 10em;
     grid-template-areas:
     'hd'
     'i-art'
@@ -211,11 +217,12 @@ div#layout-start{
 div#layout-about{
     display: grid;
     height: 10em;
-    grid-template-rows: 10em auto auto 20em;
+    grid-template-rows: 10em auto 10em 10em 10em;
     grid-template-areas:
     'hd'
-    'i-art'
-    'S-mn'
+    'nv'
+    'abt-img'
+    'abt-box'
     'ft';
 }
 
@@ -248,8 +255,7 @@ header{
 .menu{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 110%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    height: 100%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     background: white;
     position: absolute;
     top: -150%;
@@ -257,12 +263,13 @@ header{
     transition: top 0.5s;
     z-index: 10;
     padding-top: 1em;
+    width: 110%;
 }
 
 div#layout-buy{
     display: grid;
     height: auto;
-    grid-template-rows: 10em auto 20em;
+    grid-template-rows: 10em auto 10em;
     grid-template-areas:
     'hd'
     'A-mn'
@@ -304,8 +311,8 @@ main#buy-main article img{
 
 .logo{
     height: 3rem;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .cart{
@@ -353,8 +360,10 @@ section article{
 }
 
 footer{
+    background-color: white;
     grid-area: ft;
-    color: white;
+    color: black;
+    text-align: center;
 }
 #cart-button{
     border-radius: 5em;
@@ -386,7 +395,7 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 60em;
+    height: 45em;
 }
 
 
@@ -462,7 +471,7 @@ nav a{
 div#layout-start{
     display: grid;
     height: auto;
-    grid-template-rows: 10em 5em auto auto 20em;
+    grid-template-rows: 10em 5em auto auto 10em;
     grid-template-areas:
     'hd'
     'nv'
@@ -473,7 +482,7 @@ div#layout-start{
 div#layout-about{
     display: grid;
     height: auto;
-    grid-template-rows: 10em 5em 75em 25em 20em;
+    grid-template-rows: 10em 5em 25em auto 10em;
     grid-template-areas:
     'hd'
     'nv'
@@ -499,7 +508,7 @@ div#layout-about{
 }
 
 .about-img{
-    grid-area: 'abt-img';
+    grid-area: abt-img;
     background-image: url(/img/IMG_3749.JPG);
     background-color: white ;
     background-repeat: no-repeat;
@@ -507,8 +516,8 @@ div#layout-about{
     background-size: cover;
 }
 .about-box{
+    grid-area: abt-box;
     padding-left: 1em;
-    grid-area: 'abt-box';
     background-color: black;
     color: white;
     text-wrap: pretty;
@@ -670,7 +679,9 @@ footer{
     color: white;
     grid-area: ft;
     background-color: black;
-    opacity: 75%;
+    text-align: center;
+    padding-left: 25em;
+    padding-right: 25em;
 }
 
 }
