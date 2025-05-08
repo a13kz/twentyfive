@@ -142,7 +142,7 @@ h3{
 
 
 #merch{
-    background-color: white;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -153,8 +153,7 @@ h3{
 }
 .about-img{
     grid-area: abt-img;
-    background-image: url(/img/IMG_3749.JPG);
-    background-color: white ;
+    background-image: url(/img/IMG_3749_mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -174,7 +173,6 @@ h3{
 
 .image-art{
     grid-area: i-art;
-    background-color: white;
     background-image: url(/img/band_bild_alfapet_svart_vit.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -215,8 +213,7 @@ div#layout-start{
 
 div#layout-about{
     display: grid;
-    height: 10em;
-    grid-template-rows: 10em 10em 10em 10em;
+    grid-template-rows: 10em 25em 40em 10em;
     grid-template-areas:
     'hd'
     'abt-img'
@@ -485,7 +482,7 @@ div#layout-start{
 div#layout-about{
     display: grid;
     height: auto;
-    grid-template-rows: 10em 5em 25em auto 10em;
+    grid-template-rows: 10em 5em 40em 25em 10em;
     grid-template-areas:
     'hd'
     'nv'
@@ -659,7 +656,7 @@ main#buy-main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: white;
+    background-color: whitesmoke;
     padding: 5em 1em;
     gap: 5em;
     color: black;

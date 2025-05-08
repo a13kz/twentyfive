@@ -24,9 +24,6 @@ function showShop(){
 function addToList(){
     postMessage("item has been added to cart")
 }
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
 function filterButton() {
     document.getElementById("myDropdown").classList.toggle("show");
 }      
@@ -38,7 +35,7 @@ function sortItems(name){
 
   // Close the dropdown menu if the user clicks outside of it
 
-
+/*
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -51,3 +48,4 @@ window.onclick = function(event) {
     }
     }
 }
+*/
