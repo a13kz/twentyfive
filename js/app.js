@@ -21,11 +21,8 @@ function showShop(){
 
 }
 
-function addToList(){
-    postMessage("item has been added to cart")
-}
 function filterButton() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").classList.toggle("show")
 }      
 
 function sortItems(name){
