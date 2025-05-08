@@ -158,7 +158,6 @@ h3{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 30em;
 }
 .about-box{
     padding-left: 1em;
@@ -217,10 +216,9 @@ div#layout-start{
 div#layout-about{
     display: grid;
     height: 10em;
-    grid-template-rows: 10em auto 10em 10em 10em;
+    grid-template-rows: 10em 10em 10em 10em;
     grid-template-areas:
     'hd'
-    'nv'
     'abt-img'
     'abt-box'
     'ft';
@@ -263,7 +261,12 @@ header{
     transition: top 0.5s;
     z-index: 10;
     padding-top: 1em;
-    width: 110%;
+    padding-left: 1em;
+    width: 100%;
+}
+
+.menu a{
+    font-size: 2.5em;
 }
 
 div#layout-buy{
@@ -676,9 +679,9 @@ section article{
 }
 
 footer{
-    color: white;
+    color: black;
     grid-area: ft;
-    background-color: black;
+    background-color: white;
     text-align: center;
     padding-left: 25em;
     padding-right: 25em;
